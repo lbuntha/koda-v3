@@ -1,0 +1,73 @@
+{
+  "id": "drag-apples-to-jar-001",
+  "type": "drag-to-container",
+  "title": "Put apples in the jar",
+  "instruction": {
+    "text": "Put five apples into the jar.",
+    "audioKey": "audio.instruction.put-five-apples"
+  },
+  "scene": {
+    "backgroundAssetKey": "background.meadow.day"
+  },
+  "objects": {
+    "arrangement": "scattered",
+    "items": [
+      {
+        "id": "apple-1",
+        "assetKey": "object.apple.red"
+      },
+      {
+        "id": "apple-2",
+        "assetKey": "object.apple.red"
+      },
+      {
+        "id": "apple-3",
+        "assetKey": "object.apple.red"
+      },
+      {
+        "id": "apple-4",
+        "assetKey": "object.apple.red"
+      },
+      {
+        "id": "apple-5",
+        "assetKey": "object.apple.red"
+      },
+      {
+        "id": "apple-6",
+        "assetKey": "object.apple.red"
+      }
+    ]
+  },
+  "containers": [
+    {
+      "id": "jar-1",
+      "assetKey": "container.jar.star",
+      "capacity": 5
+    }
+  ],
+  "interaction": {
+    "allowReturn": true,
+    "snapToContainer": true,
+    "showDropHighlight": true
+  },
+  "validation": {
+    "rule": "exact-count",
+    "expectedCount": 5
+  },
+  "feedback": {
+    "correct": {
+      "title": "Great job!",
+      "message": "You placed five apples in the jar.",
+      "mascotEmotion": "celebrating"
+    },
+    "incorrect": {
+      "title": "Let's try again!",
+      "message": "Count every apple slowly.",
+      "mascotEmotion": "thinking"
+    }
+  },
+  "reward": {
+    "coins": 10,
+    "stars": 3
+  }
+}

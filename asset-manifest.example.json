@@ -1,0 +1,110 @@
+{
+  "version": "1.0.0",
+  "assets": {
+    "brand.koda.logo.horizontal": {
+      "type": "image",
+      "src": "/assets/brand/koda-logo-horizontal.svg",
+      "tags": [
+        "brand",
+        "logo"
+      ]
+    },
+    "character.koda.idle": {
+      "type": "image",
+      "src": "/assets/characters/koda/idle.png",
+      "width": 512,
+      "height": 512,
+      "tags": [
+        "character",
+        "koda",
+        "idle"
+      ]
+    },
+    "character.koda.thinking": {
+      "type": "image",
+      "src": "/assets/characters/koda/thinking.png",
+      "width": 512,
+      "height": 512,
+      "tags": [
+        "character",
+        "koda",
+        "feedback"
+      ]
+    },
+    "object.apple.red": {
+      "type": "image",
+      "src": "/assets/objects/fruits/apple-red.png",
+      "width": 256,
+      "height": 256,
+      "tags": [
+        "object",
+        "fruit",
+        "red"
+      ]
+    },
+    "object.star.amber": {
+      "type": "image",
+      "src": "/assets/objects/shapes/star-amber.png",
+      "width": 256,
+      "height": 256,
+      "tags": [
+        "object",
+        "shape",
+        "reward"
+      ]
+    },
+    "container.jar.star": {
+      "type": "image",
+      "src": "/assets/containers/jars/jar-star.png",
+      "width": 512,
+      "height": 512,
+      "tags": [
+        "container",
+        "jar",
+        "drop-target"
+      ]
+    },
+    "container.chest.open": {
+      "type": "image",
+      "src": "/assets/containers/chests/treasure-chest-open.png",
+      "width": 512,
+      "height": 512,
+      "tags": [
+        "container",
+        "chest",
+        "drop-target"
+      ]
+    },
+    "background.meadow.day": {
+      "type": "image",
+      "src": "/assets/backgrounds/meadow-day.png",
+      "width": 1920,
+      "height": 1080,
+      "tags": [
+        "background",
+        "meadow",
+        "day"
+      ]
+    },
+    "effect.drop.glow": {
+      "type": "image",
+      "src": "/assets/effects/drop-glow.png",
+      "width": 256,
+      "height": 256,
+      "tags": [
+        "effect",
+        "drop",
+        "highlight"
+      ]
+    },
+    "audio.feedback.correct": {
+      "type": "audio",
+      "src": "/assets/audio/feedback/correct.mp3",
+      "tags": [
+        "audio",
+        "feedback",
+        "correct"
+      ]
+    }
+  }
+}
