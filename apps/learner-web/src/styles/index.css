@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color: theme("colors.brand.900");
+  background: theme("colors.brand.50");
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+}

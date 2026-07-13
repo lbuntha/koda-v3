@@ -1,0 +1,31 @@
+{
+  "name": "koda-v3",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/learner-web",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev:learner\" \"npm run dev:api\"",
+    "dev:learner": "npm run dev --workspace @koda/learner-web",
+    "dev:api": "cd apps/api && uvicorn app.main:app --reload",
+    "build": "npm run build --workspace @koda/learner-web",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "npm run lint --workspaces --if-present",
+    "format": "prettier --write .",
+    "test": "npm run test --workspaces --if-present",
+    "test:frontend": "npm run test --workspace @koda/learner-web",
+    "test:backend": "cd apps/api && pytest"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "concurrently": "^8.2.2",
+    "eslint": "^8.57.1",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}
